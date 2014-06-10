@@ -5,14 +5,14 @@ angular.module('categoriaService', [])
 		return {
 			get : function() {
 
-				return $http.get('/laborsocialv2/public/categoria');
+				return $http.get('/laborsocial/public/categoria');
 			},
 			borrar:function(id){
-				return $http.get('/laborsocialv2/public/borrarcategoria?id='+id);
+				return $http.get('/laborsocial/public/borrarcategoria?id='+id);
 			},
 			agregar:function(nombre){
 							
-				return $http.post('/laborsocialv2/public/agregarcategoria',nombre);
+				return $http.post('/laborsocial/public/agregarcategoria',nombre);
 			}
 
 		}

@@ -5,18 +5,18 @@ angular.module('articuloService', [])
 		return {
 			get : function() {
 
-				return $http.get('/laborsocialv2/public/aarticulos');
+				return $http.get('/laborsocial/public/aarticulos');
 			},
 			getid:function(id){
 				
-				return $http.get('/laborsocialv2/public/aarticulo?id='+id);
+				return $http.get('/laborsocial/public/aarticulo?id='+id);
 			},
 			borrar:function(id,idcategoria){
-				return $http.get('/laborsocialv2/public/borrararticulo?id='+id+'&idcate='+idcategoria);
+				return $http.get('/laborsocial/public/borrararticulo?id='+id+'&idcate='+idcategoria);
 			},
 			agregar:function(datos){
 				
-				return $http.post('/laborsocialv2/public/agregararticulo',datos);
+				return $http.post('/laborsocial/public/agregararticulo',datos);
 			}
 
 
